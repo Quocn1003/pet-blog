@@ -55,27 +55,67 @@
     <main>
         <!-- Background -->
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-            <div class="carousel-inner">
+            <div class="carousel-inner ">
                 <div class="carousel-item active">
-                    <img src="asset/img/index-cat.jpg" class="d-block w-100" alt="...">
+                    <img src="/asset/img/index-cat.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="asset/img/index-cat2.jpg" class="d-block w-100" alt="...">
+                    <img src="/asset/img/index-cat2.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="asset/img/index-dog.jpg" class="d-block w-100" alt="...">
+                    <img src="/asset/img/index-dog.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="asset/img/index-dog2.jpg" class="d-block w-100" alt="...">
+                    <img src="/asset/img/index-dog2.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
         </div>
-        <div class="carousel-caption">
-            <h2 class="mb-3">Chia sẻ niềm đam mê thú cưng theo cách riêng của bạn.</h2>
-            <h6 class="mb-5">Dễ dàng tạo blog độc đáo và đầy cảm
-                hứng về thế
-                giới thú cưng yêu thương.</h6>
-            <a class="btn btn-success" href="src/register.html">TẠO BLOG CỦA BẠN</a>
+        <div class="carousel-caption text-start ">
+            <form action="" class="container">
+                <caption class="justify-content-center">
+                    <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
+                </caption>
+                <br>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="name">Họ và Tên</label>
+                        <input type="text" placeholder="Nhập họ và tên" class="rounded form-control ">
+                    </div>
+                    <div class="col-6">
+                        <label for="email">Ngày sinh</label>
+                        <input type="date" class="rounded form-control ">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="phone">Số Điện Thoại</label>
+                        <input type="number" placeholder="Nhập số điện thoại" class="rounded form-control">
+                    </div>
+                    <div class="col-6">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Nhập email" class="rounded form-control ">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="pass">Mật khẩu</label>
+                        <input type="password" placeholder="Nhập mật khẩu" class="rounded form-control">
+                    </div>
+                    <div class="col-6">
+                        <label for="pass2">Xác Nhận Mật Khẩu</label>
+                        <input type="password" placeholder="Xác nhận mật khẩu" class="rounded form-control">
+                    </div>
+                </div>
+                <label for="gender">Giới Tính: </label>
+                <input type="radio" name="gender" id="male" value="male"> Nam
+                <input type="radio" name="gender" id="female" value="female"> Nữ
+                <br>
+                <input type="checkbox"> Tôi đồng ý với các điều khoản và điều kiện
+                <div class="d-flex flex-column align-items-center">
+                    <button type="submit" class="btn btn-success">Đăng ký tài khoản</button>
+                </div>
+
+            </form>
         </div>
 
         </div>

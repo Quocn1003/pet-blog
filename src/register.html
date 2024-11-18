@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>PET BLOG</title>
+    <title>ĐĂNG KÝ TÀI KHOẢN</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -14,13 +14,72 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        /* Custom CSS blur */
+        .navbar-blur {
+            background: rgba(255, 255, 255, 0.5);
+            /* Nền trong suốt */
+            backdrop-filter: blur(10px);
+            /* Hiệu ứng mờ */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Đổ bóng nhẹ */
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            /* Màu nền bán trong suốt */
+            padding: 20px;
+            border-radius: 10px;
+            /* Tạo góc bo tròn cho caption */
+        }
+
+        .carousel-item img {
+            object-fit: cover;
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <!-- place navbar here -->
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-lg navbar-blur fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/asset/img/logo.png" class="d-inline-block" style="width: 50px; height: auto;" alt="Logo">
+                </a>
+            </div>
+        </nav>
     </header>
-    <main></main>
+    <main>
+        <!-- Background -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="asset/img/index-cat.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="asset/img/index-cat2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="asset/img/index-dog.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="asset/img/index-dog2.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-caption">
+            <h2 class="mb-3">Chia sẻ niềm đam mê thú cưng theo cách riêng của bạn.</h2>
+            <h6 class="mb-5">Dễ dàng tạo blog độc đáo và đầy cảm
+                hứng về thế
+                giới thú cưng yêu thương.</h6>
+            <a class="btn btn-success" href="src/register.html">TẠO BLOG CỦA BẠN</a>
+        </div>
+
+        </div>
+    </main>
     <footer>
         <!-- place footer here -->
     </footer>

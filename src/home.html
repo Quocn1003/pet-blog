@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,24 +14,154 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- FAV icon -->
+    <link rel="shortcut icon" href="../asset/img/logo.png" type="image/x-icon">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom CSS blur */
+        .navbar-blur {
+            background: rgba(255, 255, 255, 0.5);
+            /* Nền trong suốt */
+            backdrop-filter: blur(10px);
+            /* Hiệu ứng mờ */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Đổ bóng nhẹ */
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            /* Màu nền bán trong suốt */
+            padding: 20px;
+            border-radius: 10px;
+            /* Tạo góc bo tròn cho caption */
+            position: absolute;
+            bottom: 100px;
+        }
+
+        .carousel-item img {
+            object-fit: cover;
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <!-- place navbar here -->
-    </header>
-    <main></main>
-    <footer>
-        <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <img src="../asset/img/logo.png" style="width: 50px;" alt="">
+            <a class="navbar-brand" href="home.html"><b>PET BLOG</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Tìm</button>
+                </form>
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Thông Báo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hồ Sơ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-danger px-3 text-white" href="../index.html">Đăng Xuất</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+    <!-- Content -->
+    <div class="container my-4">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <div class="card-header bg-success text-white">Menu</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Trang Cá Nhân</li>
+                        <li class="list-group-item">Bạn Bè</li>
+                        <li class="list-group-item">Tin Nhắn</li>
+                        <li class="list-group-item">Nhóm</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-header bg-success text-white">Bạn Bè</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Nguyễn Văn A</li>
+                        <li class="list-group-item">Trần Thị B</li>
+                        <li class="list-group-item">Phạm Văn C</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-6">
+                <!-- Post Input -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <a href="add-post.html" class="btn bg-success w-100 text-white">Thêm bài viết mới</a>
+                    </div>
+                </div>
+
+                <!-- Post 1 -->
+                <div class="card mb-3">
+                    <div class="card-header d-flex align-items-center bg-success text-white">
+                        <img src="https://via.placeholder.com/40" class="rounded-circle me-2" alt="User">
+                        <strong>Nguyễn Văn A</strong>
+                    </div>
+                    <div class="card-body">
+                        <p>Hôm nay thật tuyệt vời!</p>
+                        <img src="../asset/img/thucung1.jpg" class="img-fluid rounded" alt="Post Image">
+                    </div>
+                    <div class="card-footer d-flex justify-content-around">
+                        <button class="btn btn-light">Thích</button>
+                        <button class="btn btn-light">Bình luận</button>
+                        <button class="btn btn-light">Chia sẻ</button>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="card mb-3">
+                    <div class="card-header d-flex align-items-center bg-success text-white">
+                        <img src="https://via.placeholder.com/40" class="rounded-circle me-2" alt="User">
+                        <strong>Trần Thị B</strong>
+                    </div>
+                    <div class="card-body">
+                        <p>Chó con của tôi.</p>
+                        <img src="../asset/img/thucung2.jpg" class="img-fluid rounded" alt="Post Image">
+                    </div>
+                    <div class="card-footer d-flex justify-content-around">
+                        <button class="btn btn-light">Thích</button>
+                        <button class="btn btn-light">Bình luận</button>
+                        <button class="btn btn-light">Chia sẻ</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header bg-success text-white">Liên Kết Nhanh</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Tin Tức</li>
+                        <li class="list-group-item">Cài Đặt</li>
+                        <li class="list-group-item">Trợ Giúp</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
